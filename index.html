@@ -4,9 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Laundry Wallah / Laundry Mart</title>
+
+    
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Laundry Wallah / Laundry Mart</h1>
+        <p>Your Clothes, Our Care!</p>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Us</h2>
+        <p>
+            Laundry Wallah / Laundry Mart provides reliable and affordable
+            laundry services for everyone. We take care of your clothes with
+            professional washing and cleaning methods. Our services include
+            washing, drying, ironing, folding, and dry cleaning. We focus on
+            quality, hygiene, and timely delivery. Our goal is to make your
+            laundry experience simple, convenient, and stress-free.
+        </p>
+    </section>
+
+    <!-- Image Section -->
+    <section>
+        <h2>Our Laundry</h2>
+        <img
+            src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=500&q=90"
+            alt="Clean clothes and laundry service"
+        >
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Washing and Drying</li>
+            <li>Ironing and Folding</li>
+            <li>Dry Cleaning</li>
+            <li>Stain Removal</li>
+            <li>Express Laundry Service</li>
+            <li>Special Garment Care</li>
+        </ul>
+    </section>
+
+    <!-- Price List Section -->
+    <section>
+        <h2>Price List</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price (Rs.)</th>
+            </tr>
+            <tr>
+                <td>Washing and Drying</td>
+                <td>10.00</td>
+            </tr>
+            <tr>
+                <td>Ironing and Folding</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td>Dry Cleaning</td>
+                <td>50.00</td>
+            </tr>
+            <tr>
+                <td>Stain Removal</td>
+                <td>20.00</td>
+            </tr>
+            <tr>
+                <td>Express Service</td>
+                <td>30.00</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Book Now Section -->
+    <section>
+        <h2>Book Now</h2>
+
+        <form onsubmit="alert('Thank you! Your booking request has been submitted.'); return false;">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number"
+                   pattern="[0-9]{10}"
+                   title="Enter a 10-digit phone number" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us at: info@laundrymart.com</p>
+        <p>&copy; 2026 Laundry Wallah / Laundry Mart. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

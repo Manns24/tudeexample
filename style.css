@@ -1,0 +1,56 @@
+
+/* Step 3: Set the body background color */
+body {
+    background-color: coral;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/* Step 4 and 5: Style all headings with the head class */
+.head {
+    color: darkblue;
+}
+
+/* Step 6: Give the second heading a lime background */
+#bglime {
+    background-color: lime;
+}
+
+/* Step 7: Make the second heading red */
+h2#bglime {
+    color: red;
+}
+
+/* Step 8 and 10: Style all paragraphs and customize the second */
+p {
+    color: white;
+}
+
+p:nth-of-type(2) {
+    color: black;
+    font-size: 16px;
+}
+
+/* Step 9: Give the paragraph with class para green text */
+.para {
+    color: green;
+}
+
+/* Step 11: Style links without using an id or class */
+a[href] {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Style the lists */
+ul, ol {
+    color: white;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 3px;
+}

@@ -1,56 +1,66 @@
 
-/* Step 3: Set the body background color */
+/* Universal Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    background-color: coral;
     font-family: Arial, sans-serif;
-    font-size: 12px;
-    border: 2px solid black;
-    padding: 10px;
+    background-color: #f2f2f2;
 }
 
-/* Step 4 and 5: Style all headings with the head class */
-.head {
-    color: darkblue;
+/* Main Image Section */
+.image-section {
+    width: 50vw;
+    height: 80vh;
+    margin: 10vh auto;
+    padding: 3vh 3vw;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #dddddd;
+
+    display: grid;
+    place-items: center;
+    gap: 3vh;
 }
 
-/* Step 6: Give the second heading a lime background */
-#bglime {
-    background-color: lime;
+/* Image Styling */
+.main-image {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-/* Step 7: Make the second heading red */
-h2#bglime {
-    color: red;
-}
+/* Button Styling */
+.view-button {
+    padding: 1.5vh 3vw;
+    border: none;
+    border-radius: 30px;
 
-/* Step 8 and 10: Style all paragraphs and customize the second */
-p {
+    background: linear-gradient(
+        90deg,
+        #673ab7,
+        #e91e63
+    );
+
     color: white;
-}
-
-p:nth-of-type(2) {
-    color: black;
-    font-size: 16px;
-}
-
-/* Step 9: Give the paragraph with class para green text */
-.para {
-    color: green;
-}
-
-/* Step 11: Style links without using an id or class */
-a[href] {
-    color: darkblue;
+    font-size: 1.2vw;
     font-weight: bold;
-    text-decoration: underline;
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-/* Style the lists */
-ul, ol {
-    color: white;
-    padding-left: 25px;
-}
-
-li {
-    margin-bottom: 3px;
-}
+/* Button Hover Effect */
+/* .view-button:hover {
+    background: linear-gradient(
+        90deg,
+        #e91e63,
+        #673ab7
+    );
+} */

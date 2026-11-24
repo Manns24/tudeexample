@@ -1,2 +1,0 @@
-# tudeexample
-Learning from Tute
